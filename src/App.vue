@@ -1,23 +1,32 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld/>
+      <HeaderBar />
+      <TodoInput />
+      <TodoList />
+      <FooterBar />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TodoInput from "./components/TodoInput.vue";
+import TodoList from "./components/TodoList.vue";
+import HeaderBar from "./components/HeaderBar.vue";
+import FooterBar from "./components/FooterBar.vue";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    HelloWorld,
+    TodoInput,
+    TodoList,
+    HeaderBar,
+    FooterBar,
   },
 
   data: () => ({
     //
   }),
-}
+};
 </script>
